@@ -27,7 +27,7 @@ function searchUFOs(){
     d3.event.preventDefault();
     var date = input.property('value');
     output = tableData.filter(data =>data.datetime=== date);
-    tbody.remove(); 
+    tbody.html(""); 
     output.forEach((d) => {
         var row2 = tbody.append('tr');
 
